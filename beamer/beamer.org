@@ -1,0 +1,37 @@
+#+TITLE: 基于 org 的 beamer 示例
+#+AUTHOR: Xiaofeng Wang
+#+EMAIL: wasphin@gmail.com
+#+LANGUAGE: zh
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [10pt, utf8, aspectratio=43, presentation]
+#+LaTeX_HEADER_EXTRA: \AtBeginDocument{\begin{CJK*}{UTF8}{song}}
+#+LaTeX_HEADER_EXTRA: \AtEndDocument{\clearpage\end{CJK*}}
+#+LaTeX_HEADER_EXTRA: \AtEndPreamble{\hypersetup{unicode}}
+#+BEAMER_FRAME_LEVEL: 2
+#+BEAMER_HEADER: \AtBeginSection[]{
+#+BEAMER_HEADER:   \begin{frame}<beamer>\frametitle{目录}
+#+BEAMER_HEADER:   \tableofcontents[currentsection]
+#+BEAMER_HEADER:   \end{frame}}
+#+BEAMER_HEADER: \usetheme{Madrid}\usecolortheme{whale}
+#+BEAMER_HEADER: \institute{所在公司/机构}
+#+OPTIONS: H:2 num:3 toc:2
+
+
+* 一级标题 1
+
+** 二级标题 1
+
+*** 三级标题 1
+
+三级内容。
+
+* 一级标题 2
+
+** 二级标题 2
+
+*** 三级标题 2
+
+三级内容。
+1. 第一；
+2. 第二；
+3. 第三。
