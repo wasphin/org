@@ -32,6 +32,21 @@
 \\@ifundefined{today}{\\newcommand\\today\\zhdate}{\\renewcommand\\today\\zhdate}
 \\makeatother
 
+\\uselanguage{chinese}
+\\languagepath{chinese}
+\\deftranslation[to=chinese]{Contents}{目录}
+\\deftranslation[to=chinese]{Table}{表}
+\\deftranslation[to=chinese]{Figure}{图}
+\\deftranslation[to=chinese]{Theorem}{定理}
+\\deftranslation[to=chinese]{Corollary}{推论}
+\\deftranslation[to=chinese]{Definition}{定义}
+\\deftranslation[to=chinese]{Definitions}{定义}
+\\deftranslation[to=chinese]{Lemma}{引理}
+\\deftranslation[to=chinese]{Problem}{问题}
+\\deftranslation[to=chinese]{Solution}{解}
+\\deftranslation[to=chinese]{Fact}{事实}
+\\deftranslation[to=chinese]{Proof}{证明}
+
 \\AtBeginDocument{\\begin{CJK*}{UTF8}{gbsn}}
 \\AtEndDocument{\\clearpage\\end{CJK*}}
 
