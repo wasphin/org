@@ -3,6 +3,15 @@
 (require 'ox-beamer)
 (require 'ox-latex)
 
+; plantuml
+(add-to-list 'org-src-lang-modes '("plantuml" . plantuml))
+(setq org-plantuml-jar-path (expand-file-name "/home/you/path/to/plantuml.jar"))
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '(;; other Babel languages
+   (plantuml . t)))
+(setq org-confirm-babel-evaluate nil)
+
 (setq
  org-latex-listings 'minted
  org-latex-pdf-process

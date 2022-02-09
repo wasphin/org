@@ -26,3 +26,25 @@
 1. 第一；
 2. 第二；
 3. 第三。
+
+** 插入 plantuml
+
+#+BEGIN_SRC plantuml :exports results :results file :file plantuml.png :cmdline -charset UTF-8
+  hide footbox
+  bob -> alice
+  |||
+#+END_SRC
+#+NAME: fig:plantuml
+#+CAPTION: plantuml
+#+ATTR_LATEX: :float t :height 0.2\textheight :placement [H]
+#+RESULTS:
+[[file:plantuml.png]]
+
+* 致谢
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+#+BEAMER: \begin{frame}[plain,noframenumbering]
+#+BEAMER: \centering\Huge{谢谢}
+#+BEAMER: \end{frame}
